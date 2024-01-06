@@ -1,0 +1,20 @@
+@import "utils/commonStyles/index.scss";
+
+.scrollToTop-btn-cnt {
+  position: fixed;
+  bottom: 20px;
+  right: calc(50% - 20px);
+  align-items: center;
+  font-size: toRem(25px);
+  justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadein-half 0.3s;
+  transition: opacity 0.4s;
+  opacity: 0.5;
+  outline: none;
+
+  &:hover {
+    opacity: 1;
+  }
+}
