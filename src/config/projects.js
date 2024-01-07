@@ -1,14 +1,10 @@
 import {
   apiDocumenterImage,
-  shopAnywhereImage,
-  twitterHelpdeskImage,
-  graphqlAppImage,
+  twitterCloneImgae,
+  chatSpeherImage,
   ApiIcon,
   TwitterIcon,
-  ShopIcon,
-  GraphQLAppIcon,
-  FastAPIIcon,
-  fastapiAppImage,
+  chatIcon,
 } from "assets/Images";
 import { techListArray } from "./techList";
 
@@ -21,7 +17,7 @@ export const projectsList = [
     icon: ApiIcon,
     overviewImg: apiDocumenterImage,
     iconSize: "32px",
-    duration: `Apr - June 2021`,
+    duration: ``,
     techList: techListArray.filter((tech) =>
       [
         "javascript",
@@ -54,57 +50,42 @@ export const projectsList = [
       },
       {
         type: "github",
-        url: `https://github.com/parasagrawal71/api-documenter`,
+        url: `https://github.com/piyushkumarraja/api-documenter`,
         iconSize: "23px",
       },
     ],
   },
   {
-    name: "Twitter Helpdesk",
+    name: "Twitter Clone",
     icon: TwitterIcon,
-    overviewImg: twitterHelpdeskImage,
+    overviewImg: twitterCloneImgae,
     iconSize: "28px",
-    duration: `Nov 2020`,
+    duration: ``,
     techList: techListArray.filter((tech) =>
-      [
-        "javascript",
-        "vuejs",
-        "nodejs",
-        "websocket",
-        "html",
-        "css",
-        "sass",
-        "git",
-        "api",
-        "docker",
-      ].includes(tech.id)
+      ["javascript", "nodejs", "websocket", "html", "css", "sass", "git", "api", "docker"].includes(
+        tech.id
+      )
     ),
-    description: `An application that displays all the tweets in which someone is
-      mentioned in one place. OAuth login. Mention and reply in real-time
-      without refreshing the page (WebSockets).`,
+    description: `This project is a Twitter clone, offering users a familiar social media experience. It includes features like user registration and authentication with unique usernames and passwords. Utilizing JWT for secure authentication, the system employs MongoDB to organize user data, tweets, and follower information. Users can follow/unfollow, create, edit, and delete tweets. The timeline feature mirrors Twitter's functionality, displaying tweets from followed users in chronological order. This Twitter clone provides a platform where users can engage in social interactions, share thoughts, and stay connected with a user-friendly interface reminiscent of the popular social media platform.`,
     externalUrls: [
       {
         type: "demovideo",
-        url: `https://drive.google.com/uc?id=10yPXMO4IyYN8l1xC6_fzNEaGxLOrtCc_`,
+        url: `https://github.com/Piyushkumarraja/Personal-Portfolio/assets/43479446/3ae9809e-78b3-4518-9b39-a85ebe59fcf3`,
         isVideo: true,
       },
       {
-        type: "website",
-        url: `https://twitter-helpdesk-app.web.app/`,
-      },
-      {
         type: "github",
-        url: `https://github.com/parasagrawal71/twitter-helpdesk`,
+        url: `https://github.com/Piyushkumarraja/Twitter.git`,
         iconSize: "23px",
       },
     ],
   },
   {
-    name: "Shop Anywhere",
-    icon: ShopIcon,
-    overviewImg: shopAnywhereImage,
+    name: "Chat-Sphere",
+    icon: chatIcon,
+    overviewImg: chatSpeherImage,
     iconSize: "30px",
-    duration: `Apr - Sep 2020`,
+    duration: ``,
     techList: techListArray.filter((tech) =>
       [
         "javascript",
@@ -119,67 +100,15 @@ export const projectsList = [
         "git",
         "api",
         "materialUi",
+        "socket",
       ].includes(tech.id)
     ),
-    description: `Built a simple e-commerce website to learn and apply different
-      concepts from React, Redux, NodeJS, and Mongo. This project was
-      my experiment to learn good folder structure, git best practices like
-      branch naming conventions, reusable and configurable components,
-      CSS best practices such as BEM naming conventions, and more.`,
+    description: `Designed & Developed a web-based chat.
+    application. Allows users to communicate with each other personally and within a group. Real Time Chatting with Typing indicators and notification.`,
     externalUrls: [
       {
-        type: "website",
-        url: `https://shop-anywhere.web.app/`,
-      },
-      {
         type: "github",
-        url: `https://github.com/parasagrawal71/shop-anywhere`,
-        iconSize: "23px",
-      },
-    ],
-  },
-  {
-    name: "GraphQL App",
-    icon: GraphQLAppIcon,
-    overviewImg: graphqlAppImage,
-    iconSize: "30px",
-    iconColor: "#C52E95",
-    duration: `May 2023`,
-    techList: techListArray.filter((tech) =>
-      ["graphql", "javascript", "nodejs", "mongo", "docker"].includes(tech.id)
-    ),
-    description: `A server based on GraphQL that provides the capability to perform queries on posts, comments related to the posts, and users. Additionally, it allows one to add new users and modify existing user data.`,
-    externalUrls: [
-      {
-        type: "website",
-        url: `https://graphql-app-production.up.railway.app/`,
-      },
-      {
-        type: "github",
-        url: `https://github.com/parasagrawal71/graphql-app`,
-        iconSize: "23px",
-      },
-    ],
-  },
-  {
-    name: "FastAPI App",
-    icon: FastAPIIcon,
-    overviewImg: fastapiAppImage,
-    iconSize: "30px",
-    iconColor: "#009688",
-    duration: `July 2023`,
-    techList: techListArray.filter((tech) =>
-      ["fastapi", "python", "mongo", "docker", "googlecloud"].includes(tech.id)
-    ),
-    description: `A FastAPI-based CRUD application.`,
-    externalUrls: [
-      {
-        type: "website",
-        url: `https://fastapi-app-bp2sirryrq-uc.a.run.app/docs`,
-      },
-      {
-        type: "github",
-        url: `https://github.com/parasagrawal71/fastapi-app`,
+        url: `https://github.com/Piyushkumarraja/Chat-Sphere`,
         iconSize: "23px",
       },
     ],

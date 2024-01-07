@@ -21,6 +21,7 @@ import {
   KubernetesIcon,
   TypescriptIcon,
   FastAPIIcon,
+  SocketIoIcon,
 } from "assets/Images";
 import { GoogleCloudIcon } from "assets/SkillSvgs";
 
@@ -32,6 +33,11 @@ export const techListMap = {
     displayName: "Javascript",
     Icon: JavaScriptIcon,
     id: "javascript",
+  },
+  socket: {
+    displayName: "Socket.io",
+    Icon: SocketIoIcon,
+    id: "socket",
   },
   nodejs: {
     displayName: "Node JS",

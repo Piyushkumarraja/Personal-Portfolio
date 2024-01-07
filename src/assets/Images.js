@@ -9,6 +9,7 @@ import {
   BsInstagram as InstagramIcon,
   BsArrowUpCircle as ScrollToTopIcon,
   BsBuilding as OfficeIcon,
+  BsChatDotsFill as chatIcon,
 } from "react-icons/bs";
 import { IoMdMail as MailIcon } from "react-icons/io";
 import { AiOutlineShoppingCart as ShopIcon } from "react-icons/ai";
@@ -29,10 +30,8 @@ import myPicture from "./img/Piyush_formal.png";
 import halfAndroid from "./img/half-android.png";
 import halfiOS from "./img/half-iOS.png";
 import apiDocumenterImage from "./img/api-documenter.png";
-import shopAnywhereImage from "./img/shop-anywhere.png";
-import twitterHelpdeskImage from "./img/twitter-helpdesk.png";
-import graphqlAppImage from "./img/graphql-app.png";
-import fastapiAppImage from "./img/fastapi-app.png";
+import twitterCloneImgae from "./img/twitterClone.png";
+import chatSpeherImage from "./img/chatSphare.png";
 import {
   LinesIcon,
   FrontendIcon,
@@ -89,10 +88,8 @@ export {
   halfiOS,
   CrossplatformMobileAppIcon,
   apiDocumenterImage,
-  shopAnywhereImage,
-  twitterHelpdeskImage,
-  graphqlAppImage,
-  fastapiAppImage,
+  twitterCloneImgae,
+  chatSpeherImage,
   ApiIcon,
   TwitterIcon,
   GraphQLAppIcon,
@@ -112,6 +109,7 @@ export {
   ScrollMouse,
   ArrowKeys,
   HoverIllustration,
+  chatIcon,
 
   // Skillset icons
   JavaScriptIcon,

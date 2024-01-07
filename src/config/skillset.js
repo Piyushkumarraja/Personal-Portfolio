@@ -59,7 +59,7 @@ export const skillsetsArray = [
     show: true,
     categories: [BACKEND],
     details: getSkillDetails({
-      industryExperience: calYoeForASkill("diff_month", { value: 6 }),
+      industryExperience: calYoeForASkill("fraction", { value: 1 }),
       level: LEVEL.advanced,
       id: techListMap.nodejs.id,
     }),
@@ -69,7 +69,7 @@ export const skillsetsArray = [
     show: true,
     categories: [BACKEND],
     details: getSkillDetails({
-      industryExperience: calYoeForASkill("diff_month", { value: 6 }),
+      industryExperience: calYoeForASkill("fraction", { value: 1 }),
       level: LEVEL.advanced,
       id: techListMap.expressjs.id,
     }),
@@ -99,7 +99,7 @@ export const skillsetsArray = [
     show: true,
     categories: [FRONTEND],
     details: getSkillDetails({
-      industryExperience: calYoeForASkill("diff_month", { value: 6 }),
+      industryExperience: calYoeForASkill("fraction", { value: 1 }),
       level: LEVEL.advanced,
       id: techListMap.react.id,
     }),
@@ -140,7 +140,7 @@ export const skillsetsArray = [
     show: true,
     categories: [FRONTEND],
     details: getSkillDetails({
-      industryExperience: calYoeForASkill("diff_month", { value: 12 }),
+      industryExperience: calYoeForASkill("fraction", { value: 1 }),
       level: LEVEL.intermediate,
       id: techListMap.materialUi.id,
     }),
@@ -150,7 +150,7 @@ export const skillsetsArray = [
     show: true,
     categories: [FRONTEND],
     details: getSkillDetails({
-      industryExperience: calYoeForASkill("", { value: 2 }),
+      industryExperience: calYoeForASkill("fraction", { value: 1 }),
       level: LEVEL.intermediate,
       id: techListMap.redux.id,
     }),
@@ -166,72 +166,72 @@ export const skillsetsArray = [
     }),
   },
   {
-    ...techListMap.linux,
-    show: true,
-    categories: [OTHERS],
-    details: getSkillDetails({
-      industryExperience: calYoeForASkill("fraction", { value: 1 }),
-      level: LEVEL.intermediate,
-      id: techListMap.linux.id,
-    }),
-  },
-  {
-    ...techListMap.vuejs,
-    show: true,
-    categories: [FRONTEND],
-    details: getSkillDetails({
-      industryExperience: calYoeForASkill("", { value: 1 }),
-      level: LEVEL.intermediate,
-      id: techListMap.vuejs.id,
-    }),
-  },
-  {
-    ...techListMap.python,
-    show: true,
-    categories: [BACKEND],
-    details: getSkillDetails({
-      industryExperience: calYoeForASkill("", { value: 1 }),
-      level: LEVEL.intermediate,
-      id: techListMap.python.id,
-    }),
-  },
-  {
-    ...techListMap.aws,
-    show: true,
-    categories: [BACKEND, DEVOPS],
-    details: getSkillDetails({
-      industryExperience: calYoeForASkill("", { value: 1 }),
-      level: LEVEL.intermediate,
-      id: techListMap.aws.id,
-    }),
-  },
-  {
     ...techListMap.kafka,
     show: true,
     categories: [BACKEND],
     details: getSkillDetails({
-      industryExperience: calYoeForASkill("diff_month", { value: 18 }),
+      industryExperience: calYoeForASkill("fraction", { value: 1 }),
       level: LEVEL.intermediate,
       id: techListMap.kafka.id,
     }),
   },
   {
-    ...techListMap.graphql,
+    ...techListMap.linux,
     show: true,
-    categories: [BACKEND],
+    categories: [OTHERS],
     details: getSkillDetails({
-      industryExperience: calYoeForASkill("", { value: 0.5 }),
+      industryExperience: calYoeForASkill("fraction", { value: 1 }),
       level: LEVEL.beginner,
-      id: techListMap.graphql.id,
+      id: techListMap.linux.id,
     }),
   },
+  // {
+  //   ...techListMap.vuejs,
+  //   show: true,
+  //   categories: [FRONTEND],
+  //   details: getSkillDetails({
+  //     industryExperience: calYoeForASkill("", { value: 1 }),
+  //     level: LEVEL.intermediate,
+  //     id: techListMap.vuejs.id,
+  //   }),
+  // },
+  // {
+  //   ...techListMap.python,
+  //   show: true,
+  //   categories: [BACKEND],
+  //   details: getSkillDetails({
+  //     industryExperience: calYoeForASkill("", { value: 1 }),
+  //     level: LEVEL.intermediate,
+  //     id: techListMap.python.id,
+  //   }),
+  // },
+  // {
+  //   ...techListMap.aws,
+  //   show: true,
+  //   categories: [BACKEND, DEVOPS],
+  //   details: getSkillDetails({
+  //     industryExperience: calYoeForASkill("", { value: 1 }),
+  //     level: LEVEL.intermediate,
+  //     id: techListMap.aws.id,
+  //   }),
+  // },
+  // {
+  //   ...techListMap.graphql,
+  //   show: true,
+  //   categories: [BACKEND],
+  //   details: getSkillDetails({
+  //     industryExperience: calYoeForASkill("", { value: 0.5 }),
+  //     level: LEVEL.beginner,
+  //     id: techListMap.graphql.id,
+  //   }),
+  // },
   {
     ...techListMap.docker,
     show: true,
     categories: [BACKEND, DEVOPS],
     details: getSkillDetails({
       industryExperience: calYoeForASkill("", { value: 1 }),
-      level: LEVEL.intermediate,
+      level: LEVEL.beginner,
       id: techListMap.docker.id,
     }),
   },
@@ -252,12 +252,12 @@ function getSkillDetails({ industryExperience, level, id }) {
       value: level,
       show: true,
     },
-    {
-      displayName: "Used In Projects:",
-      id: "usedInProjects",
-      value: calNoOfProjectsSkillUsedIn(id),
-      show: true,
-    },
+    // {
+    //   displayName: "Used In Projects:",
+    //   id: "usedInProjects",
+    //   value: calNoOfProjectsSkillUsedIn(id),
+    //   show: true,
+    // },
   ];
 }
 

@@ -1,2 +1,23 @@
 .main-cnt {
-}
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh; /* Adjust based on your requirement to center vertically */
+  }
+  
+  .card {
+    // background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    border: 2px solid white;
+  }
+  
+  .Email-cnt,
+  .mobile-cnt {
+    margin-bottom: 10px;
+  }
+  
+  /* Add any additional styling based on your design preferences */
+  

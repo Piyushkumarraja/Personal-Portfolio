@@ -7,13 +7,13 @@ export const categories = [
     id: "backend",
     displayName: "Backend",
     show: true,
-    sortOrder: 1,
+    sortOrder: 2,
   },
   {
     id: "frontend",
     displayName: "Frontend",
     show: true,
-    sortOrder: 2,
+    sortOrder: 1,
   },
   {
     id: "devops",
@@ -35,33 +35,42 @@ const OTHERS = categories?.find((s) => s.id === "others");
 
 export const experienceList = [
   {
-    companyName: "Nference",
+    companyName: "Pinnacle Infotech",
     employmentType: "Full-Time",
-    designation: "Senior Engineer",
-    duration: "Apr 2022 - Present",
+    designation: "Full-stack Developer",
+    duration: "Aug 2023 - Present",
     companyType: "Product-based",
     companyWebsite: "",
     companyIntro: "",
     works: [
       {
-        bulletPoint: `Driven small projects to re-architect the system's components improving its robustness and resilience.`,
+        bulletPoint: `Currently working as a frontend developer in Curamei’s product
+        team, contributing to a US healthcare management solution utilized
+        by hospitals.`,
+        category: FRONTEND,
+      },
+      {
+        bulletPoint: `Developing a patient summary screen with complex data involves
+        component structure, data modeling, UI design, state management,
+        and API integration to efficiently display and manage extensive
+        patient information.`,
+        category: FRONTEND,
+      },
+      {
+        bulletPoint: `Implementing the visit feature to track patient encounters, ensuring a comprehensive and seamless healthcare experience. This feature encompasses functionalities such as scheduling, logging, and managing patient visits, contributing to an efficient encounter tracking system within the healthcare management solution.`,
+        category: FRONTEND,
+      },
+      {
+        bulletPoint: `Implementing Web Sockets for real-time updating of drop-down values. `,
         category: BACKEND,
       },
       {
-        bulletPoint: `Redesigned the architecture of the node server to improve code maintainability and reduce issues, ultimately minimizing the resources required for development and testing.`,
+        bulletPoint: `Developing multiple REST APIs to facilitate seamless communication and data exchange within the healthcare management solution. These APIs cover various functionalities, including patient data retrieval, encounter management, and visit tracking, ensuring robust and efficient backend support for the entire system.`,
         category: BACKEND,
       },
       {
-        bulletPoint: `Upgraded inter-service communication by implementing a RabbitMQ-based message queue to enhance the system's availability and fault tolerance, which resulted in a 50% reduction in errors.`,
-        category: BACKEND,
-      },
-      {
-        bulletPoint: `Collaborated with the DevOps team to deploy applications to the cloud, utilizing HAProxy and Nginx servers.`,
-        category: DEVOPS,
-      },
-      {
-        bulletPoint: `Performed code reviews, implemented best practices, and enforced coding standards to ensure high-quality code and maintainable systems.`,
-        category: OTHERS,
+        bulletPoint: `When implementing the patient registration feature with multiple forms, it's crucial to optimize API calls and manage state efficiently. Leveraging Recoil for state management can greatly enhance the overall performance and maintainability of the application. `,
+        category: FRONTEND,
       },
     ],
   },
@@ -69,13 +78,73 @@ export const experienceList = [
     companyName: "Nference",
     employmentType: "Full-Time",
     designation: "Software Engineer",
-    duration: "Jan 2021 - Mar 2022",
+    duration: "July 2022 - Aug 2023",
     companyType: "Product-based",
     companyWebsite: "",
     companyIntro: "",
     works: [
       {
-        bulletPoint: `Played a significant role in helping the company secure a 10 million dollar long-term contract by developing robust APIs and user-friendly UI screens.`,
+        bulletPoint: `Developing next-generation interfaces for high throughput scanning
+        clusters and clinical workflows. It includes integration of outputs from
+        different micro-services and conveying on UI in a meaningful manner.`,
+        category: BACKEND,
+      },
+      {
+        bulletPoint: `Developed global search & auto-suggestion feature which involved
+        writing complex pipelines in MongoDB.`,
+        category: BACKEND,
+      },
+      {
+        bulletPoint: `Utilized HTML, CSS, JavaScript and React to create 10+ responsive
+        landing pages.`,
+        category: FRONTEND,
+      },
+      {
+        bulletPoint: `Developed other features like error alert mechanism with a due date
+        & a setting page for inline quality check and scan metrics.`,
+        category: FRONTEND,
+      },
+      {
+        bulletPoint: `Proficient in using Kafka for efficient data transfer and integration.`,
+        category: BACKEND,
+      },
+      {
+        bulletPoint: `Experienced in implementing Web Sockets for real-time
+        communication between front-end and back-end.`,
+        category: BACKEND,
+      },
+      {
+        bulletPoint: `Knowledgeable in leveraging MongoDB aggregation pipeline for
+        efficient data processing.`,
+        category: BACKEND,
+      },
+      {
+        bulletPoint: `Proficient in using Kafka for efficient data transfer and integration.`,
+        category: BACKEND,
+      },
+    ],
+  },
+  {
+    companyName: "Nference",
+    employmentType: "Internship",
+    designation: "Software Engineer Intern",
+    duration: "Jan 2022 - July 2022",
+    companyType: "Product-based",
+    companyWebsite: "",
+    companyIntro: "",
+    works: [
+      {
+        bulletPoint: "Developed multi-layered & intelligent forms for Quality Check module.",
+        category: FRONTEND,
+      },
+      {
+        bulletPoint:
+          "Contributed to authentication module with features like password expiry & account recovery modules.",
+        category: FRONTEND,
+      },
+      {
+        bulletPoint:
+          "Successfully optimized queries, reducing response time from 30 seconds to 800 milliseconds, resulting in significant performance improvements.",
         category: BACKEND,
       },
       {
@@ -85,60 +154,6 @@ export const experienceList = [
       {
         bulletPoint: `Achieved a 75% reduction in deployment time by implementing a seamless deployment method of the applications in multiple modes and environments.`,
         category: DEVOPS,
-      },
-      {
-        bulletPoint: `Developed an efficient Node.js-based load balancer to manage parallel processing across multiple machines, resulting in the successful conversion of 25K DZI images into DICOM format.`,
-        category: BACKEND,
-      },
-      {
-        bulletPoint: `Received the "Ngenious Award" in recognition of my outstanding performance.`,
-        category: OTHERS,
-      },
-      {
-        bulletPoint: `Employed best coding practices to thoughtfully design, test, and implement new features that effectively address issues and drive software forward.`,
-        category: FRONTEND,
-      },
-      {
-        bulletPoint: `Developed cross-platform compatible desktop application to view DZI (Deep Zoom Image) using electron builder.`,
-        category: FRONTEND,
-      },
-    ],
-  },
-  {
-    companyName: "Piktorlabs",
-    employmentType: "Full-Time",
-    designation: "Software Engineer",
-    duration: "Jul 2019 - Jan 2021",
-    companyType: "Product-based",
-    companyWebsite: "",
-    companyIntro: "",
-    works: [
-      {
-        bulletPoint: `Transformed Express API Server hosted on AWS elastic beanstalk into Serverless APIs using Node.js and AWS Lambda entirely from scratch, which led to a decrease in server downtime.`,
-        category: BACKEND,
-      },
-      {
-        bulletPoint: `Played a key role in the integration of the ADP APIs and launch GoTag, an employee portal application, on the ADP Marketplace.`,
-        category: BACKEND,
-      },
-      {
-        bulletPoint: `Throughout my tenure at this company, I worked on several projects and gained experience in utilizing a diverse range of technologies such as React.js, Redux, Node.js, MongoDB, Vue.js, Python, React Native, and AWS.`,
-        category: FRONTEND,
-      },
-    ],
-  },
-  {
-    companyName: "Keitai Technologies",
-    employmentType: "Internship",
-    designation: "Intern",
-    duration: "Dec 2018 - Jan 2019",
-    companyType: "Product-based",
-    companyWebsite: "",
-    companyIntro: "",
-    works: [
-      {
-        bulletPoint: `Worked as a full-stack developer at this company on various websites, acquiring proficiency in diverse technologies such as JavaScript, HTML, CSS, Bootstrap, and PHP.`,
-        category: FRONTEND,
       },
     ],
   },
