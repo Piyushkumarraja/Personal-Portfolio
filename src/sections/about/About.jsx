@@ -14,7 +14,7 @@ import appStyles from "./About.module.scss";
 const About = () => {
   return (
     <main className={appStyles["about-section"]} id="about">
-      <SectionHeaderComponent headerTitle="ABOUT" />
+      {/* <SectionHeaderComponent headerTitle="ABOUT" /> */}
 
       <section className={appStyles["about-section--top"]}>
         <img src={SELF_PICTURE_URL} alt="Profile Pic" className={appStyles["profile-pic"]} />

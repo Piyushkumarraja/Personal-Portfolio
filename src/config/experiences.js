@@ -35,10 +35,46 @@ const OTHERS = categories?.find((s) => s.id === "others");
 
 export const experienceList = [
   {
+    companyName: "Leena AI",
+    employmentType: "Full-Time",
+    designation: "Frontend Developer",
+    duration: "July 2024 - Present",
+    companyType: "Product-based",
+    companyWebsite: "",
+    companyIntro: "",
+    works: [
+      {
+        bulletPoint: `Currently working as a frontend developer in Leena AI’s Enterprise Knowledge Management
+        product, integrating with systems to sync data for RAG over LLMs.`,
+        category: FRONTEND,
+      },
+      {
+        bulletPoint: `Developed features like custom data sync, sync logs, global
+        search,audience-specific access and QA automation test cases.`,
+        category: FRONTEND,
+      },
+      {
+        bulletPoint: `Implemented an approval matrix feature to streamline article
+        approvals for customers.`,
+        category: FRONTEND,
+      },
+      {
+        bulletPoint: `Designed and developed a Kanban board with advanced filtering
+        capabilities.`,
+        category: FRONTEND,
+      },
+      {
+        bulletPoint: `Developed multiple connectors, including Box, SFTP, SharePoint, and
+        Google Drive to easily connect with different enterprises data systems to Leena AI.`,
+        category: FRONTEND,
+      },
+    ],
+  },
+  {
     companyName: "Pinnacle Infotech",
     employmentType: "Full-Time",
     designation: "Full-stack Developer",
-    duration: "Aug 2023 - Present",
+    duration: "Aug 2023 - July 2024",
     companyType: "Product-based",
     companyWebsite: "",
     companyIntro: "",
